@@ -8,7 +8,7 @@ const UserRoute = require('./routes/Users')
 const ResidencyRoute=require('./routes/Residency')
 
 dotenv.config();
-const PORT =process.env.port
+const PORT =process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json());
